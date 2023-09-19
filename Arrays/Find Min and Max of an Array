@@ -1,0 +1,22 @@
+ class Solution
+ {
+
+    public static void main(String[] args) {
+        long[] a={1,2,3,4,6,9,5,8,7,0,1000};
+        long max=a[0],min=a[0];
+        for(int i=0;i<a.length-1;i++)
+        {
+            if(max<a[i+1])
+            {
+                max=a[i+1];
+            }
+
+            if(min>a[i+1])
+            {
+                min=a[i+1];
+            }
+        }
+        System.out.println(min+" "+max);
+    }
+
+}
